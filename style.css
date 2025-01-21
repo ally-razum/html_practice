@@ -7,11 +7,17 @@ main {
 #about {
     display: flex;   
     justify-content: flex-start;
-    gap: 20px;
+    align-items: center;   
     width: 90%;
 }
+#about div {
+    flex: 1;
+   
+  }
+
 #text {
     margin-top: 40px;
+    flex: 2;
 }
 
 #pro {
@@ -38,3 +44,21 @@ video {
     display: flex;    
     width: 80%;    
 }
+details {
+    width: 150px;
+}
+
+@media (max-width: 768px) {
+    #about {
+      flex-direction: column; 
+    }
+  
+    #text {
+      order: 2;
+    }
+  
+    #about img {
+      order: 1;
+      width: 50%;
+    }
+  }
