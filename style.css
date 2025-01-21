@@ -1,0 +1,40 @@
+body {    
+    font-family: "Neucha", sans-serif;
+}
+main {
+    margin: 15px;
+}
+#about {
+    display: flex;   
+    justify-content: flex-start;
+    gap: 20px;
+    width: 90%;
+}
+#text {
+    margin-top: 40px;
+}
+
+#pro {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 200px;
+
+}
+button {
+    height: 20px;
+    background-color:#9ccc65;
+    border: none;
+    border-radius: 10px;
+}
+video {
+    display: flex;    
+    width: 80%;    
+}

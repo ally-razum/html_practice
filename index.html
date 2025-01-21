@@ -8,11 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Hachi+Maru+Pop&family=Lora:ital,wght@0,400..700;1,400..700&family=Neucha&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poiret+One&display=swap" rel="stylesheet">
-<style>
+<meta name="description" content="Portfolio Frontend developer">
+<meta name="keywords" content="Portfolio, rezume, Frontend">
+<meta name="autor" content="Alevtina">
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+<!-- <style>
     body {
         font-family: "Neucha", sans-serif;
     }
-</style>
+</style> -->
 </head>
 <body>
     <header>
@@ -31,22 +36,29 @@
                 <li>
                     <a href="#contacts">Contacts</a>
                 </li>
+                <li>
+                    <a href="second.html">Second page</a>
+                </li>
             </ul>
         </nav>
     </header>
     <hr>
     <main>
         <h1>Portfolio Alevtina</h1>
-        <section id="about">
-            <h2>About me</h2>
-            <p>🚁 I worked as a software engineer in the group for developing algorithmic support for systems at a company that manufactures automatic control systems for helicopters</p>
-            <p>📲 I worked as a quality assurance engineer in a large international IT company that produces software for mobile communication and telecommunications systems</p>
-            <p>😎 And now <b><em>I'm a Frontend developer</em></b> </p>
-            <p>💻 I want to participate in large interesting open source projects, learn new technologies and develop professionally</p>
-            <p>📚 Now I’m currently learning React, Redux and mastering DevOps practices</p>
-            <p>💞️ <strong>I will be glad to cooperate, write joint projects on JavaScript, React, Redux toolkit</strong></p>
-            <p>🤩 Let's CODE !</p>
-            <img width="250px" style= "border-radius: 20px" src="photo.jpg" alt="avatar">
+        <section id="about">      
+            <div>
+                <h2>About me</h2>
+                <img width="250px" style= "border-radius: 20px" src="photo.jpg" alt="avatar"> 
+             </div>      
+            <div id="text">              
+                <p>🚁 I worked as a software engineer in the group for developing algorithmic support for systems at a company that manufactures automatic control systems for helicopters</p>
+                <p>📲 I worked as a quality assurance engineer in a large international IT company that produces software for mobile communication and telecommunications systems</p>
+                <p>😎 And now <b><em>I'm a Frontend developer</em></b> </p>
+                <p>💻 I want to participate in large interesting open source projects, learn new technologies and develop professionally</p>
+                <p>📚 Now I’m currently learning React, Redux and mastering DevOps practices</p>
+                <p>💞️ <strong>I will be glad to cooperate, write joint projects on JavaScript, React, Redux toolkit</strong></p>
+                <p>🤩 Let's CODE !</p> 
+            </div>           
         </section>
         <br>
         <section id="edu">
@@ -73,14 +85,15 @@
                 </li>
                 <li>
                     <abbr title="Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.">Git</abbr>, 
-                    Vite
+                    <abbr title="Vite is a build tool that aims to provide a faster and learner development experience for modern web projects.">Vite</abbr>
                 </li>
             </ul>
         </section>
         <br>
         <section id="projects">
             <h2>Projects</h2>
-            <article>
+            <div id="pro">
+                <article>
                 <h3>New Year wishes 🎄</h3>
                 <details>
                     <summary>About</summary>                    
@@ -94,23 +107,87 @@
                 </details>
             </article>
             <article>
-                <h3></h3>
+                <h3>T.R.A.N.S.L.I.T. 📒</h3>
                 <details>
                     <summary>About</summary>
+                    <p>Web application that converts Russian text into its transliteration and saves it in a dictionary.</p>
+                    <a href="https://project-translit-eight.vercel.app/">link to project</a>
                 </details>
             </article>
+            <article>
+                <h3>Maxwell Cat elevator 🐈‍⬛</h3>
+                <details>
+                    <summary>About</summary>
+                    <p>Funny project - mini game. 
+                        <br>
+                        Cat rides in the elevator, there is even music. 
+                        <br>
+                        This is my <mark>first project</mark> as a developer!
+                    </p>
+                    <a href="https://project-elevator-bay.vercel.app/">link to project</a>
+                </details>
+            </article>
+            <article>
+                <h3>AROMA cabinet 💧</h3>
+                <details>
+                    <summary>About</summary>
+                    <p>My first big project.
+                        <br>An application for a health recovery clinic. 
+                        <br>If you want to see more details, contact me. 
+                        <br>This application can only be used by users who have access
+                    </p>
+                    <a href="second.html">Link to the owerflow demo-video about the project</a>
+                    <br>
+                    <a href="https://aroma-cabinet.amrita.center/">link to project</a>
+                </details>
+            </article> 
+            </div>
+           
             
         </section>
         <br>
         <section id="contacts">
-            <h2></h2>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+            <h2>Contacts</h2>
+            <address>
+                <ol>
+                    <li>
+                        <p>Email:</p>
+                        <a href="mailto:alevtina.razumovskaia@mail.ru">alevtina.razumovskaia@mail.ru</a>
+                    </li>
+                    <li>
+                        <p>Phone:</p>
+                        <a href="tel:+123456789">+123456789</a>
+                    </li>                    
+                </ol>
+            </address>
+            <form action="">
+                <div>
+                    <input type="email" placeholder="Your email">                    
+                </div>
+                <div>
+                    <input type="text" placeholder="Your name">
+                </div>
+                <select>
+                    <option value="student">Student</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Developer">Developer</option>
+                    <option value="Other">Other</option>
+                </select>
+                <div>
+                    <label> Write back
+                        <input type="checkbox">
+                    </label>
+                </div>
+                <textarea placeholder="Message"></textarea>
+                <br>
+                <button type="submit">Send</button>
+            </form>         
         </section>
     </main>
-    
+    <hr>
+    <footer>
+        <p>&copy; 2025 Alevtina</p>
+        <a href="https://github.com/ally-razum">Github</a>
+    </footer>
 </body>
 </html>
